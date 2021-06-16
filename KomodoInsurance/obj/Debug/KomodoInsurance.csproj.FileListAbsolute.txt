@@ -1,0 +1,7 @@
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\TUES_0615_CLASS_NOTES\KomodoInsurance\bin\Debug\KomodoInsurance.exe.config
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\TUES_0615_CLASS_NOTES\KomodoInsurance\bin\Debug\KomodoInsurance.exe
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\TUES_0615_CLASS_NOTES\KomodoInsurance\bin\Debug\KomodoInsurance.pdb
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\TUES_0615_CLASS_NOTES\KomodoInsurance\obj\Debug\KomodoInsurance.csproj.AssemblyReference.cache
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\TUES_0615_CLASS_NOTES\KomodoInsurance\obj\Debug\KomodoInsurance.csproj.CoreCompileInputs.cache
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\TUES_0615_CLASS_NOTES\KomodoInsurance\obj\Debug\KomodoInsurance.exe
+C:\Users\johnp\Documents\ElevenFiftyProjects\DotNetProjects\TUES_0615_CLASS_NOTES\KomodoInsurance\obj\Debug\KomodoInsurance.pdb
