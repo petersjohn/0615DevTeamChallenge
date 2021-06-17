@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6F9CEBD1-1CCD-4903-A23B-0E6D6A4AAAFE}</ProjectGuid>
+    <ProjectGuid>{53512AB4-D7EE-48E5-9EB2-E9781B85A80A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>KomodoInsurance</RootNamespace>
-    <AssemblyName>KomodoInsurance</AssemblyName>
+    <RootNamespace>KomodoInsConsole</RootNamespace>
+    <AssemblyName>KomodoInsConsole</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,16 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProgramUI.cs" />
-    <Compile Include="TeamRepo.cs" />
-    <Compile Include="Developer.cs" />
-    <Compile Include="DeveloperRepo.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="ProgramUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Teams.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KomodoInsurance\KomodoRepoPattern.csproj">
+      <Project>{6F9CEBD1-1CCD-4903-A23B-0E6D6A4AAAFE}</Project>
+      <Name>KomodoRepoPattern</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

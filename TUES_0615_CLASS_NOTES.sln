@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0615_CLASS_NOTES", "0615_CL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0615_Class_Interfaces", "0615_Class_Interfaces\0615_Class_Interfaces.csproj", "{0AAB3CED-144F-4738-BADD-E21201FDD119}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KomodoInsurance", "KomodoInsurance\KomodoInsurance.csproj", "{6F9CEBD1-1CCD-4903-A23B-0E6D6A4AAAFE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KomodoRepoPattern", "KomodoInsurance\KomodoRepoPattern.csproj", "{6F9CEBD1-1CCD-4903-A23B-0E6D6A4AAAFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KomodoInsConsole", "KomodoInsConsole\KomodoInsConsole.csproj", "{53512AB4-D7EE-48E5-9EB2-E9781B85A80A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{6F9CEBD1-1CCD-4903-A23B-0E6D6A4AAAFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F9CEBD1-1CCD-4903-A23B-0E6D6A4AAAFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F9CEBD1-1CCD-4903-A23B-0E6D6A4AAAFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53512AB4-D7EE-48E5-9EB2-E9781B85A80A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53512AB4-D7EE-48E5-9EB2-E9781B85A80A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53512AB4-D7EE-48E5-9EB2-E9781B85A80A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53512AB4-D7EE-48E5-9EB2-E9781B85A80A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

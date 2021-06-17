@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KomodoInsurance
+namespace KomodoRepo
 {
     public class DeveloperRepo
     {
-        private List<Developer> _devList = new List<Developer>();
+        private readonly List<Developer> _devList = new List<Developer>();
 
         //create
 
@@ -26,12 +26,14 @@ namespace KomodoInsurance
 
         //Update method
 
-        public bool updateDev(int devId, Developer newDev)
+        public bool UpdateDev(int devId, Developer newDev)
         {
             //find the dev record
             Developer oldDev = GetDevByID(devId);
             //Update the content
-            if(oldDev != null)
+
+            
+            if(oldDev != null) //if a DevID is updated there needs to be a method in Program UI to update the Team objects.
             {
                 oldDev.DevID = newDev.DevID;
                 oldDev.LastName = newDev.LastName;
@@ -41,9 +43,7 @@ namespace KomodoInsurance
             return false;
         }
 
-
-
-        //helper method
+           //helper method
 
         public Developer GetDevByID(int id)
         {

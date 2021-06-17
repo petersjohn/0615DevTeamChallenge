@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KomodoInsurance
+namespace KomodoRepo
 {
-    class TeamRepo
+    public class TeamRepo
     {
         private List<Team> _teamList = new List<Team>();
 
@@ -19,6 +19,18 @@ namespace KomodoInsurance
         public List<Team> GetTeamList()
         {
             return _teamList;
+        }
+
+        public string GetTeamByDevID(int devID)
+        {
+            foreach(Team item in _teamList)
+                if (item.DevId.Contains(devID))
+                {
+                    return (item.TeamName + " ID: " + item.TeamId);
+
+                }
+            return null;
+           
         }
         //update
         public bool UpdtTeamName(int teamId, Team newContent)
@@ -37,8 +49,28 @@ namespace KomodoInsurance
 
         }
 
-        //Delete  Delete the Team -- this will require a method in the Progam UI to remove the team ID from the dev list
+        public bool AddDevToTeam(int devID, int teamID)
+        {
+            Team content = GetTeamById(teamID);
 
+            if (content == null)
+            {
+                return false;
+            }
+
+            int initCount = content.DevId.Count;
+            content.DevId.Add(devID);
+            if(initCount < content.DevId.Count)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        //delete methods
         public bool DeleteTeam(int teamid)
         {
             //find the team
@@ -59,6 +91,28 @@ namespace KomodoInsurance
             {
                 return false;
             }
+        }
+
+        public bool RemoveDevFromTeam(int devID, int teamID)
+        {
+            Team content = GetTeamById(teamID);
+
+            
+            if (content == null)
+            {
+                return false;
+            }
+            int initCount = content.DevId.Count;
+            content.DevId.Remove(devID);
+            if(initCount > content.DevId.Count)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
         }
 
         //helper method
